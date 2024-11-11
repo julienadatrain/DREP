@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Julien"
+    },
+    "motivations": {
+      "@value": "I've come across both great and not-so-great projects. As an SPO managing two pools and an ADA holder, my priority is ensuring that funds are allocated to high-quality projects. This is the most effective way to drive value and growth for Cardano."
+    },
+    "objectives": {
+      "@value": "My core belief is that the strength and longevity of the Cardano ecosystem depend on transparency, accountability, and the responsible allocation of community funds. I believe in fostering an environment where innovation thrives, but only if it is backed by integrity, realistic goals, and a clear path to delivering value to the community.\n\nEnsure Funds Are Spent Wisely: My primary objective is to advocate for rigorous project evaluations. Every ADA from the treasury is a shared resource, contributed by the community, and should be treated with the utmost care. I aim to support projects that demonstrate a strong potential for delivering measurable benefits, whether through technological advancements, community growth, or ecosystem enrichment.\n\nPrevent Scams and Dodgy Projects: Protecting the ecosystem from malicious actors is critical. I will prioritize thorough due diligence to identify and reject projects that show signs of dishonesty, lack of transparency, or unsustainable."
+    },
+    "paymentAddress": {
+      "@value": "addr1q85gn0t34flhjsf4kndqzhh4zcvhte69xylu4d0amjh6ax8dn9e03jsp466hjqtcaxftwqpkjqg8mt22ddxaswu8nfkquu3mcs"
+    },
+    "qualifications": {
+      "@value": "Active SPO of Two Pools (DIVY and MILKY):\nOperating since the Incentivized Testnet, demonstrating technical expertise and commitment to Cardano’s decentralization.\n\nFormer Catalyst Reviewer:\nExperience evaluating proposals, ensuring alignment with Cardano’s goals and feasibility.\n\nCardano Holder:\nLong-term holder with a vested interest in the ecosystem’s success.\n\nEarth Node Operator (x5):\nProven ability to manage decentralized infrastructure at scale.\n\nMarketing Leadership Experience:\nServed as Marketing Manager and CMO for two direct-to-consumer companies, providing strategic insights into project viability and communication."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "My Ada Handle"
+        },
+        "uri": {
+          "@value": "https://handle.me/julien"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Linkedin"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/julientollie/"
+        }
+      }
+    ]
+  }
+}
